@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sean's Portfolio - Marketing Coordinator & Product Designer">
+    <meta name="author" content="Sean">
+    <title>Sean's Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <!-- P5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="background-canvas"></div>
+    
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="taskbar-left" id="taskbarLeft"></div>
+        <div class="taskbar-right">
+            <div class="social-icon" onclick="openContactModal()" title="Email">✉️</div>
+            <a href="https://instagram.com/yourusername" target="_blank" class="social-icon" title="Instagram">📷</a>
+            <a href="https://github.com/yourusername" target="_blank" class="social-icon" title="GitHub">🐙</a>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="desktop">
+        <div class="desktop-item" onclick="openWindow('portfolio')">
+            <div class="icon">📁</div>
+            <div class="label">sean's portfolio</div>
+        </div>
+        
+        <div class="desktop-item" onclick="openWindow('resume')">
+            <div class="icon">📄</div>
+            <div class="label">resume.pdf</div>
+        </div>
+        
+        <div class="desktop-item" onclick="openWindow('about')">
+            <div class="icon">📝</div>
+            <div class="label">about.txt</div>
+        </div>
+    </div>
+
+    <!-- Portfolio Window -->
+    <div class="window active" id="portfolioWindow" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 600px;">
+        <div class="window-header">
+            <div class="window-title">sean's portfolio</div>
+            <div class="window-controls">
+                <button class="control-btn minimize" onclick="minimizeWindow('portfolioWindow')"></button>
+                <button class="control-btn maximize" onclick="maximizeWindow('portfolioWindow')"></button>
+                <button class="control-btn close" onclick="closeWindow('portfolioWindow')"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>case studies & design process work</p>
+            <div class="case-studies-grid">
+                <div class="case-study-item" onclick="openCaseStudy('ai-agents')">
+                    <div class="case-study-cover">
+                        <div class="case-study-icon">🤖</div>
+                    </div>
+                    <div class="case-study-info">
+                        <div class="case-study-title">AI Agent Platform UX Strategy</div>
+                        <div class="case-study-description">How clearer product framing could transform user adoption in emerging tech platforms.</div>
+                    </div>
+                </div>
+                <div class="case-study-item" onclick="openCaseStudy('banking')">
+                    <div class="case-study-cover">
+                        <div class="case-study-icon">🏦</div>
+                    </div>
+                    <div class="case-study-info">
+                        <div class="case-study-title">Mobile Banking UX</div>
+                        <div class="case-study-description">Streamlining complex financial transactions for better user experience.</div>
+                    </div>
+                </div>
+                <div class="case-study-item" onclick="openCaseStudy('ecommerce')">
+                    <div class="case-study-cover">
+                        <div class="case-study-icon">🛒</div>
+                    </div>
+                    <div class="case-study-info">
+                        <div class="case-study-title">E-commerce Checkout Flow</div>
+                        <div class="case-study-description">Reducing cart abandonment through optimized checkout process design.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Window -->
+    <div class="window-content" style="padding: 0; overflow: hidden;">
+        <iframe src="/assets/resume.pdf" 
+                width="100%" 
+                height="100%" 
+                style="border: none; min-height: 360px;">
+            <div style="padding: 20px; text-align: center;">
+                <p>Your browser doesn't support PDF viewing.</p>
+                <a href="/assets/resume.pdf" target="_blank" class="btn btn-primary">
+                    📄 Open PDF in new tab
+                </a>
+            </div>
+        </iframe>
+    </div>
+
+    <!-- About Window -->
+    <div class="window" id="aboutWindow" style="top: 160px; left: 200px; width: 450px; height: 350px;">
+        <div class="window-header">
+            <div class="window-title">about.txt</div>
+            <div class="window-controls">
+                <button class="control-btn minimize" onclick="minimizeWindow('aboutWindow')"></button>
+                <button class="control-btn maximize" onclick="maximizeWindow('aboutWindow')"></button>
+                <button class="control-btn close" onclick="closeWindow('aboutWindow')"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>hey there 👋</p>
+            <br>
+            <p>i'm sean, currently looking for opportunities in marketing/operations while exploring product design.</p>
+            <br>
+            <p>i love analyzing user experiences, optimizing processes, and finding creative solutions to complex problems.</p>
+            <br>
+            <p>when i'm not working, you'll find me coding experimental projects (like this portfolio), exploring new tools, or diving deep into design systems.</p>
+            <br>
+            <p>let's connect!</p>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2 style="margin: 0; color: #2c3e50;">Get in Touch</h2>
+                <button class="modal-close" onclick="closeContactModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" required></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-secondary" onclick="closeContactModal()">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal -->
+    <div class="modal-overlay" id="caseStudyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="margin: 0; color: #2c3e50;" id="caseStudyTitle">Case Study</h2>
+                <button class="modal-close" onclick="closeCaseStudy()">×</button>
+            </div>
+            <div class="modal-body" id="caseStudyContent"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/background-animation.js"></script>
+    <script src="/js/window-manager.js"></script>
+    <script src="/js/drag-manager.js"></script>
+    <script src="/js/content/case-studies.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

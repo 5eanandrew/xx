@@ -1,0 +1,115 @@
+/* Mobile */
+@media (max-width: var(--breakpoint-mobile)) {
+    /* Keep background animation */
+    #background-canvas {
+        display: block;
+    }
+
+    /* Hide all desktop elements */
+    .taskbar,
+    .desktop {
+        display: none;
+    }
+
+    /* Hide all other windows */
+    #resumeWindow,
+    #aboutWindow {
+        display: none !important;
+    }
+
+    /* Portfolio window becomes simple full screen */
+    #portfolioWindow {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(20px) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        display: block !important;
+        transform: none !important;
+        z-index: 10;
+    }
+
+    /* Hide window header */
+    #portfolioWindow .window-header {
+        display: none;
+    }
+
+    /* Simple content area */
+    #portfolioWindow .window-content {
+        padding: 20px;
+        height: 100%;
+        max-height: none;
+        overflow-y: auto;
+        color: white;
+    }
+
+    /* Hide intro text */
+    #portfolioWindow .window-content > p {
+        display: none;
+    }
+
+    /* Simple grid */
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    /* Simpler cards for mobile */
+    .case-study-item {
+        aspect-ratio: auto;
+        display: block;
+    }
+
+    .case-study-cover {
+        height: 120px;
+        flex: none;
+    }
+
+    .case-study-icon {
+        font-size: 36px;
+    }
+
+    .case-study-info {
+        padding: 16px;
+    }
+
+    .case-study-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .case-study-description {
+        font-size: 14px;
+    }
+
+    /* Simple modal */
+    .modal-content {
+        margin: 0;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: var(--breakpoint-mobile)) and (max-width: var(--breakpoint-tablet)) {
+    .case-studies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+    }
+    
+    .case-study-title {
+        font-size: 13px;
+    }
+    
+    .case-study-description {
+        font-size: 11px;
+    }
+}
