@@ -15,39 +15,9 @@
  */
 
 const CASE_STUDIES = [
-    {
-        id: 'norther-tourism',
-        icon: '🏔️',
-        title: 'Norther Tourism',
-        description: 'UX research and content strategy to bridge social media success with purposeful web experiences for national park travelers.',
-        gradient: 'gradient5',
-        meta: {
-            client: 'Norther',
-            role: 'UX Design',
-            team: 'Sonya, Blake & Myself',
-            timeline: '2.5 weeks'
-        },
-        content: `
-            <h2>Project Brief</h2>
-            <p>Norther enlisted my student team at General Assembly to help revamp their current website and content strategy.</p>
-            <p><em>"Our current business model is to leverage off the growth of our social media accounts. We would love it if you could redesign the website to highlight the national parks and draw attention from the socials to the website."</em></p>
-            
-            <h2>Key Research Findings</h2>
-            <ul>
-                <li><strong>51.6% Age 24-44</strong></li>
-                <li><strong>66.7% Research trips with social media</strong></li>
-                <li><strong>62.1% Do not plan travel with children</strong></li>
-                <li><strong>54.8% Research trips on Mobile</strong></li>
-            </ul>
-            
-            <h2>Solution</h2>
-            <p>To provide focused park information, insider insights, and resources to help educate and plan fulfilling destination visits, while helping them adapt to unexpected circumstances during their visit.</p>
-            
-            <h2>Impact</h2>
-            <p>Our recommendations provided Norther with a clear path forward to bridge their successful social media presence with a purposeful web experience.</p>
-        `
-    },
-    {
+    
+
+        {
         id: 'ai-agent-platform',
         icon: '🤖',
         title: 'AI Agent Platform',
