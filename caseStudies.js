@@ -17,42 +17,124 @@
 const CASE_STUDIES = [
     
 
-        {
-        id: 'ai-agent-platform',
-        icon: '🤖',
-        title: 'AI Agent Platform',
-        description: 'Redesigned complex AI workflows into guided conversations, improving task completion by 45%.',
-        gradient: 'gradient2',
-        meta: {
-            client: 'TechCorp AI',
-            role: 'Senior UX Designer',
-            team: 'PM, 2 Engineers, Data Scientist',
-            timeline: '6 weeks'
-        },
-        content: `
-            <h2>Challenge</h2>
-            <p>The AI agent platform was experiencing a <strong>40% drop-off rate</strong> during complex task flows. Users were abandoning workflows midway through multi-step processes.</p>
-            
-            <h2>Key Problems Identified</h2>
-            <ul>
-                <li><strong>Cognitive Overload:</strong> Too many choices presented simultaneously</li>
-                <li><strong>Trust Issues:</strong> Users couldn't assess AI recommendation confidence</li>
-                <li><strong>Context Loss:</strong> Multi-step processes lacked continuity</li>
-                <li><strong>Feedback Loop:</strong> No clear way to refine AI outputs</li>
-            </ul>
-            
-            <h2>Design Solution</h2>
-            <p>Redesigned the interface as a <em>guided conversation</em>, breaking complex tasks into digestible questions with smart defaults and AI confidence indicators.</p>
-            
-            <h2>Results</h2>
-            <ul>
-                <li><strong>Task completion rate:</strong> 60% → 87% (+45%)</li>
-                <li><strong>Average session time:</strong> 3.2min → 5.8min (+81%)</li>
-                <li><strong>User satisfaction score:</strong> 6.2/10 → 8.4/10 (+35%)</li>
-                <li><strong>Support tickets:</strong> -23% reduction</li>
-            </ul>
-        `
+        // Replace the existing Norther Tourism object in your CASE_STUDIES array with this:
+
+{
+    id: 'norther-tourism',
+    icon: '🏔️',
+    title: 'Norther Tourism',
+    description: 'UX research and content strategy to bridge social media success with purposeful web experiences for national park travelers.',
+    gradient: 'gradient5',
+    meta: {
+        client: 'Norther',
+        role: 'UX Design & Research',
+        team: 'Sonya, Blake & Myself',
+        timeline: '2.5 weeks'
     },
+    content: `
+        <h2>Project Brief</h2>
+        <p>Norther enlisted my student team at General Assembly to help revamp their current website and content strategy.</p>
+        <p><em>"Our current business model is to leverage off the growth of our social media accounts. We would love it if you could redesign the website to highlight the national parks and draw attention from the socials to the website."</em></p>
+        
+        <h2>Preliminary Research</h2>
+        <p>Before meeting with the CEO, our team investigated the Norther brand online. The results left us questioning what Norther actually was. Their website showcased them as a digital marketing company without real services, while their social media profiles displayed curated shots and travel information for National Parks in Australia.</p>
+        <p><strong>Our realization:</strong> Rather than a simple redesign, we would be working to expand a social media brand's offering with an entirely new website strategy.</p>
+        
+        <h2>Goals & Challenges</h2>
+        <p><strong>High Level Goals:</strong></p>
+        <ul>
+            <li>Research and develop a content strategy for the Norther brand</li>
+            <li>Find new opportunities through user research</li>
+            <li>Provide design rollout recommendations based on MVP</li>
+        </ul>
+        
+        <p><strong>Key Challenges:</strong></p>
+        <ul>
+            <li><strong>Highly competitive market</strong> — How might we create content that provides a unique perspective to traveling?</li>
+            <li><strong>Capturing social media users</strong> — How might we integrate a website to successfully capture their social media following?</li>
+            <li><strong>Maintaining brand goals</strong> — How might we educate travelers about the unique value of Australia Tourism?</li>
+        </ul>
+        
+        <h2>User Research</h2>
+        <p>We crafted a 15-question survey distributed directly to Norther's social media following. With an incentive provided by Norther, we received 65 meaningful responses. This gave us an amazing opportunity to talk directly to their audience and define demographics, explore content interests, and discover user behavior and goals.</p>
+        
+        <p><em>[Image placeholder: Norther's Audience Statistics]</em></p>
+        
+        <p><strong>Key Demographics:</strong></p>
+        <ul>
+            <li><strong>51.6% Age 24-44</strong></li>
+            <li><strong>66.7% Research trips with social media</strong></li>
+            <li><strong>62.1% Do not plan travel with children</strong></li>
+            <li><strong>54.8% Research trips on Mobile</strong></li>
+        </ul>
+        
+        <p><strong>Key quote from users:</strong></p>
+        <p><em>"A clear summary of what's open and closed and the best weather"</em></p>
+        
+        <h2>Synthesizing User Responses</h2>
+        <p>The most time-consuming aspect of the project. Using Miro, we added our survey response information and refined it through affinity mapping. This process was essential in helping Sonya develop a meaningful persona and helped us focus our content strategy.</p>
+        
+        <p><em>[Image placeholder: Affinity Mapping Process]</em></p>
+        
+        <h2>Competitive Analysis</h2>
+        <p>The tourism market in Northern Australia has high competition with well-known websites that mostly focus on travel articles and destination overviews. However, when comparing tourism websites from across the world, I found possibilities for differentiation and new strategies for connecting social media and websites.</p>
+        
+        <p><em>[Image placeholder: Competitive Analysis Grid]</em></p>
+        
+        <h2>Pivoting at the Halfway Point</h2>
+        <p>Nearing our halfway point in the 2.5 week deadline, we stepped back and re-evaluated our position. We agreed to revise our initial goals and develop more realistic expectations for what we could deliver, focusing on an MVP approach rather than a full high-fidelity prototype.</p>
+        
+        <p><strong>Problem Statement:</strong> Young travelers need better insight into planning their adventures so that they can prepare accordingly and have an experience that matches their expectations.</p>
+        
+        <p><strong>Our Solution:</strong> Provide focused park information, insider insights, and resources to help educate and plan fulfilling destination visits, while helping them adapt to unexpected circumstances during their visit.</p>
+        
+        <h2>Information Architecture</h2>
+        <p>Dany provided us with a content strategy draft to validate through our research. As Norther didn't currently offer this content, it was challenging to fully grasp what was provided. We overcame this by developing a successful information architecture through affinity mapping as a team.</p>
+        
+        <p><em>[Image placeholder: Before - Original IA]</em></p>
+        <p><em>[Image placeholder: After - Refined IA]</em></p>
+        
+        <h2>Content Rollout MVP</h2>
+        <p>This phased approach was designed to create the most impactful content, soonest, and get the new Norther site up and running. This allows for structured expansion of offerings as team bandwidth allows.</p>
+        
+        <p><strong>The MVP is Based on the User:</strong> User needs → Brand Voice → Beyond</p>
+        
+        <p><em>[Image placeholder: MVP Phased Approach Diagram]</em></p>
+        <p><em>[Image placeholder: Content Strategy Recommendations]</em></p>
+        <p><em>[Image placeholder: Layout Recommendations]</em></p>
+        
+        <h2>Our Recommendations to Norther</h2>
+        <ul>
+            <li><strong>Well-defined content structure</strong> based on user research</li>
+            <li><strong>Research-based understanding</strong> of their audience needs</li>
+            <li><strong>Actionable layout recommendations</strong> for implementation</li>
+            <li><strong>Starting point content strategy</strong> with phased rollout</li>
+            <li><strong>Clear execution plan</strong> to implement recommendations</li>
+        </ul>
+        
+        <h2>Key Deliverables</h2>
+        <ul>
+            <li><strong>65-response user survey</strong> with comprehensive analysis</li>
+            <li><strong>Validated information architecture</strong> restructuring content from social-first to web-optimized</li>
+            <li><strong>Phased content rollout strategy</strong> prioritizing quick wins and user needs</li>
+            <li><strong>Design system recommendations</strong> with mobile-first approach (54.8% mobile usage)</li>
+            <li><strong>Final presentation deck</strong> delivered to stakeholder</li>
+        </ul>
+        
+        <h2>Impact & Results</h2>
+        <p>Our recommendations provided Norther with a clear, research-backed path forward to bridge their successful social media presence with a purposeful web experience that serves their audience's actual needs for planning national park adventures.</p>
+        
+        <p><strong>Business Impact:</strong> Transformed Norther from a digital marketing company with unclear offerings into a focused content platform with a validated strategy for converting 60K+ social media followers into engaged website users.</p>
+        
+        <h2>What I Learned</h2>
+        <ul>
+            <li><strong>Adapting to ambiguity:</strong> When initial project scope didn't match reality, we pivoted quickly after preliminary research to redefine deliverables</li>
+            <li><strong>Managing constraints:</strong> Adjusted from high-fidelity designs to strategic recommendations when timeline required pragmatic scoping at the halfway point</li>
+            <li><strong>Direct user access is gold:</strong> Survey responses from actual followers provided insights no amount of secondary research could match</li>
+            <li><strong>Research synthesis takes time:</strong> Affinity mapping was time-intensive but essential for translating 65 responses into actionable insights</li>
+        </ul>
+    `
+},
     {
         id: 'bmx-archive',
         icon: '🚴',
