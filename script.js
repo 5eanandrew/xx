@@ -186,11 +186,44 @@ function showHome() {
 }
 
 function showAbout() {
-    alert('About page coming soon! Update the showAbout() function in script.js to add your about page content.');
+    document.getElementById('about-modal').classList.add('active');
+}
+
+function closeAbout() {
+    document.getElementById('about-modal').classList.remove('active');
 }
 
 function showContact() {
-    alert('Contact page coming soon! Update the showContact() function in script.js to add your contact form.');
+    document.getElementById('contact-modal').classList.add('active');
+}
+
+function closeContact() {
+    document.getElementById('contact-modal').classList.remove('active');
+}
+
+// ===================================
+// CONTACT FORM HANDLING
+// ===================================
+function handleContactForm(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
+
+    // Create mailto link
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    const mailtoLink = `mailto:smcw616@gmail.com?subject=${subject}&body=${body}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    // Close modal after a brief delay
+    setTimeout(() => {
+        closeContact();
+        document.getElementById('contact-form').reset();
+    }, 500);
 }
 
 // ===================================
@@ -199,18 +232,35 @@ function showContact() {
 document.addEventListener('DOMContentLoaded', function() {
     // Load case studies
     loadCaseStudies();
-    
+
     // Close modal when clicking outside
     document.getElementById('case-detail').addEventListener('click', function(e) {
         if (e.target === this) {
             closeCase();
         }
     });
-    
-    // Keyboard support - ESC to close modal
+
+    document.getElementById('about-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeAbout();
+        }
+    });
+
+    document.getElementById('contact-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeContact();
+        }
+    });
+
+    // Keyboard support - ESC to close modals
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             closeCase();
+            closeAbout();
+            closeContact();
         }
     });
+
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', handleContactForm);
 });
