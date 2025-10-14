@@ -223,6 +223,269 @@ const CASE_STUDIES = [
         </ul>
     `
 },
+
+
+// Replace the AI Agent Platform object in your CASE_STUDIES array with this:
+
+{
+    id: 'ai-agent-platform',
+    icon: '🤖',
+    title: 'AI Agent Launchpad Redesign',
+    description: 'Redesigning AI agent platforms to prioritize utility over speculation—making real tech visible and usable.',
+    gradient: 'gradient2',
+    meta: {
+        client: 'Independent Research',
+        role: 'UX Design & Research',
+        timeline: 'Ongoing'
+    },
+    content: `
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 24px; border-radius: 12px; margin: 0 0 32px 0; text-align: center;">
+            <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 18px; line-height: 1.6; font-weight: 500;">Making agent platforms actually usable, beyond memecoin trading</p>
+        </div>
+        
+        <h2>The Problem</h2>
+        <p>Most AI agent launchpads are built like existing DEXs or memecoin platforms: a focus on price charts, trading metrics, and vague product descriptions. Users get hyped into buying tokens for features and roadmaps but don't know how (or if) they can actually use the agent. There's a complete disconnect between what's being sold and how it works.</p>
+        
+        <div style="background: linear-gradient(135deg, #4a3f5c 0%, #2d2538 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #8A2BE2; margin: 24px 0;">
+            <p style="color: #fff; font-style: italic; margin: 0; font-size: 16px; line-height: 1.6;">"I bought the token… now what?"</p>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #5a3d3d 0%, #3d2828 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #ff6b6b; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">❌</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 8px 0;">This isn't a visual issue — it's structural</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">These platforms fail to understand web3, focusing solely on memecoin trading while ignoring the real product they have. No platform has been able to create a coherent journey that ties discovery, investment, and utility together.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Research & Analysis</h2>
+        <p><strong>Platforms Audited:</strong> Virtuals, MakeFun, Spectral, Vital, Soulgraph</p>
+        <p><strong>Research Approach:</strong> Systematic product audits, community research through Discord and Twitter, AI-assisted deep research (GPT-4, Claude, Grok)</p>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🔍</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Consistent Patterns Across Platforms</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Agent pages are 60–80% price chart, 1 vague sentence of description</li>
+                        <li>Most don't show what the agent actually does (no demo, walkthrough, or preview)</li>
+                        <li>Users buy tokens without understanding how to access or use the tech</li>
+                        <li>Functional details (if they exist) are buried in docs or Twitter threads</li>
+                        <li>Only Soulgraph slightly prioritized utility, but execution was still unclear</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <p><em>[Image placeholder: Platform comparison screenshots showing speculation-focused layouts]</em></p>
+        
+        <h2>User Feedback</h2>
+        <p>Real quotes gathered from community Discord servers and social media:</p>
+        
+        <div style="display: grid; gap: 12px; margin: 24px 0;">
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #667eea;">
+                <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Clarity</p>
+                <p style="margin: 8px 0 0 0; color: #333; font-style: italic;">"I can't tell what this agent actually does from the landing page."</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #f5576c;">
+                <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Trust</p>
+                <p style="margin: 8px 0 0 0; color: #333; font-style: italic;">"You don't own your agent. It's centralized + opaque."</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #00f2fe;">
+                <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Onboarding</p>
+                <p style="margin: 8px 0 0 0; color: #333; font-style: italic;">"I bought the token… now what?"</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #38f9d7;">
+                <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Utility</p>
+                <p style="margin: 8px 0 0 0; color: #333; font-style: italic;">"It just shows a price chart. Is this even real?"</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #f093fb;">
+                <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Differentiation</p>
+                <p style="margin: 8px 0 0 0; color: #333; font-style: italic;">"How is this better than any other meme launchpad?"</p>
+            </div>
+        </div>
+        
+        <h2>Design Hypothesis</h2>
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🧠</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Core Hypothesis</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 16px 0; line-height: 1.6;">If we flip the structure — leading with what the agent <strong>does</strong> instead of what it <strong>costs</strong> — users will understand the product better, trust the platform more, and actually engage with the technology.</p>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 14px; margin: 0 0 8px 0; font-weight: 600;">Supporting hypotheses:</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Showing a quick preview or demo improves comprehension</li>
+                        <li>Categorizing by functionality helps users explore and compare</li>
+                        <li>Transparency about specs builds trust (training data, source, devs)</li>
+                        <li>Clear post-purchase flows improve retention and reduce support tickets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Information Architecture Shift</h2>
+        <p>The core problem is structural. Current platforms follow this flow:</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0; border-left: 4px solid #ff6b6b;">
+            <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Current Structure</p>
+            <p style="margin: 8px 0 0 0; color: #333; font-family: monospace;">Token Chart → Price Action → Vague Value Prop → Immediate Purchase CTA</p>
+        </div>
+        
+        <p>I'm proposing this alternative:</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0; border-left: 4px solid #38f9d7;">
+            <p style="margin: 0; color: #666; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Proposed Structure</p>
+            <p style="margin: 8px 0 0 0; color: #333; font-family: monospace;">Agent Introduction → Use Case Examples → Interactive Preview → Optional Financial Engagement</p>
+        </div>
+        
+        <p><em>[Image placeholder: Side-by-side user flow comparison diagrams]</em></p>
+        
+        <h2>Target User</h2>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 24px; border-radius: 12px; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 32px;">👤</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">The Crypto-Native Explorer</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 12px 0; line-height: 1.6;">Mid-20s, crypto-native user who came from NFTs and lives on Twitter/Discord.</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Skeptical but curious about new technology</li>
+                        <li>Doesn't read documentation — expects clarity from UI</li>
+                        <li>Expects usable products, not just hype and speculation</li>
+                        <li>Values transparency and authenticity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Problems to Solve</h2>
+        <div style="background: linear-gradient(135deg, #5a3d3d 0%, #3d2828 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #ff9f43; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">⚠️</span>
+                <div style="flex: 1;">
+                    <ol style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li><strong>Utility buried under financial noise</strong> — Real functionality hidden behind price charts</li>
+                        <li><strong>No clear explanation</strong> — Users can't understand what agents actually do</li>
+                        <li><strong>Token ≠ access</strong> — Users confused after purchase about next steps</li>
+                        <li><strong>Zero transparency</strong> — No info on how agents work or who built them</li>
+                        <li><strong>Wrong mental model</strong> — Platforms feel like trading terminals, not tools</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Design Goals</h2>
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">✅</span>
+                <div style="flex: 1;">
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Make functionality the first thing people see</li>
+                        <li>Explain what the agent does + how to use it</li>
+                        <li>Connect token ownership to actual utility</li>
+                        <li>Build trust through creator info and transparent tech specs</li>
+                        <li>Help users compare agents based on use cases, not hype</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Proposed Solution Framework</h2>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">Homepage Redesign</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li>Agent categories based on <strong>what they do</strong> (Copytrading, Research, Content, etc.)</li>
+                <li>Spotlight sections showing <strong>working examples</strong> in action</li>
+                <li>Simple, jargon-free explanation of what AI agents are + how they work</li>
+                <li>Financial information available but not dominant</li>
+            </ul>
+        </div>
+        
+        <p><em>[Image placeholder: Homepage wireframe with functional categories]</em></p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">Agent Cards</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li>Quick 5-second <strong>demo or preview</strong> showing actual functionality</li>
+                <li>Clear tags like "Onchain Analyst" or "Telegram Trading Bot"</li>
+                <li>Functional summary <strong>before</strong> price information</li>
+                <li>Trust indicators: creator info, deployment date, user count</li>
+            </ul>
+        </div>
+        
+        <p><em>[Image placeholder: Agent card redesign mockup]</em></p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">Agent Profile Pages</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li><strong>"What it does"</strong> block at the top (not marketing fluff)</li>
+                <li>Transparent specs: training data, use cases, source links, creator info</li>
+                <li>Token information moved down — <strong>function first</strong></li>
+                <li>Step-by-step usage guide + creator roadmap</li>
+                <li>Community feedback and actual use examples</li>
+            </ul>
+        </div>
+        
+        <p><em>[Image placeholder: Agent profile page wireframe]</em></p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">User Dashboard</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li>See your agents + <strong>what they do</strong></li>
+                <li>Usage metrics and activity, not just price performance</li>
+                <li>Quick-access tutorials, configuration, and integration steps</li>
+                <li>Clear next steps after token purchase</li>
+            </ul>
+        </div>
+        
+        <h2>Business & Operations Benefits</h2>
+        <ul>
+            <li><strong>Reduced support burden</strong> — Fewer "What does this agent do?" tickets</li>
+            <li><strong>Faster content production</strong> — Bio templates and design system speed up launches</li>
+            <li><strong>Scalable design system</strong> — Framework works across new agents without redesign</li>
+            <li><strong>Community trust</strong> — Easier to onboard creators with transparent structure</li>
+            <li><strong>User retention</strong> — Clear utility leads to sustained engagement, not just speculation</li>
+        </ul>
+        
+        <h2>Current Status & Next Steps</h2>
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🔜</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">What I'm Working On</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Mid-fidelity wireframes in Figma</li>
+                        <li>Exploring layout implementations with Tailwind</li>
+                        <li>Getting feedback from builders and users via Discord and Grok</li>
+                        <li>Testing hypotheses through prototype interactions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Why This Matters</h2>
+        <p>Crypto UX is chaotic — especially when real products hide behind meme-driven front ends. This project is about making real technology visible and usable, proving that better structure leads to better trust, better usage, and a more honest launchpad experience.</p>
+        
+        <p><strong>The core insight:</strong> These platforms might be intentionally prioritizing speculation over comprehension. But if they want sustained growth beyond hype cycles, they need to help users actually understand and use what they're buying.</p>
+        
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 28px; border-radius: 12px; margin: 32px 0; text-align: center;">
+            <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 20px;">Design Philosophy</p>
+            <p style="color: rgba(255,255,255,0.95); margin: 0; font-size: 17px; line-height: 1.6;">Lead with utility, not speculation.<br>Show what it does before showing what it costs.<br>Make real tech visible and usable.</p>
+        </div>
+        
+        <h2>What I Learned</h2>
+        <ul>
+            <li><strong>Question assumptions</strong> — Even in emerging tech spaces, established patterns may not be optimal</li>
+            <li><strong>Connect UX to business outcomes</strong> — Good design isn't just aesthetics; it's about sustainable growth</li>
+            <li><strong>Systematic analysis matters</strong> — Auditing multiple platforms revealed consistent structural problems</li>
+            <li><strong>Sometimes the problem IS the business model</strong> — Speculation-focused design might be intentional, not accidental</li>
+        </ul>
+    `
+},
+
     {
         id: 'skate-archive',
         icon: '🚴',
