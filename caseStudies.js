@@ -19,6 +19,8 @@ const CASE_STUDIES = [
 
         // Replace the existing Norther Tourism object in your CASE_STUDIES array with this:
 
+// Replace the existing Norther Tourism object in your CASE_STUDIES array with this:
+
 {
     id: 'norther-tourism',
     icon: '🏔️',
@@ -34,70 +36,156 @@ const CASE_STUDIES = [
     content: `
         <h2>Project Brief</h2>
         <p>Norther enlisted my student team at General Assembly to help revamp their current website and content strategy.</p>
-        <p><em>"Our current business model is to leverage off the growth of our social media accounts. We would love it if you could redesign the website to highlight the national parks and draw attention from the socials to the website."</em></p>
+        
+        <div style="background: linear-gradient(135deg, #4a3f5c 0%, #2d2538 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #8A2BE2; margin: 24px 0;">
+            <p style="color: #fff; font-style: italic; margin: 0; font-size: 16px; line-height: 1.6;">"Our current business model is to leverage off the growth of our social media accounts. We would love it if you could redesign the website to highlight the national parks and draw attention from the socials to the website."</p>
+        </div>
         
         <h2>Preliminary Research</h2>
         <p>Before meeting with the CEO, our team investigated the Norther brand online. The results left us questioning what Norther actually was. Their website showcased them as a digital marketing company without real services, while their social media profiles displayed curated shots and travel information for National Parks in Australia.</p>
-        <p><strong>Our realization:</strong> Rather than a simple redesign, we would be working to expand a social media brand's offering with an entirely new website strategy.</p>
+        
+        <div style="background: linear-gradient(135deg, #5a3d3d 0%, #3d2828 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #ff6b6b; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🚨</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">What is Norther?</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">On our deep dive into the Norther brand, we were a little caught off guard. Their website showcased Norther as a <em style="color: #fff;">digital marketing</em> company but they didn't offer any real services or information. Moving to their social media accounts, these profiles displayed curated shots and travel information for National Parks in Australia.</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 12px 0 0 0; line-height: 1.6;">My team didn't see an option for a redesign but instead believed we would be working to expand a social media brand's offering with a new website.</p>
+                </div>
+            </div>
+        </div>
         
         <h2>Goals & Challenges</h2>
-        <p><strong>High Level Goals:</strong></p>
-        <ul>
-            <li>Research and develop a content strategy for the Norther brand</li>
-            <li>Find new opportunities through user research</li>
-            <li>Provide design rollout recommendations based on MVP</li>
-        </ul>
+        <p>During our Zoom call with the CEO of Norther, Dany, we defined clear goals and expectations for this project.</p>
         
-        <p><strong>Key Challenges:</strong></p>
-        <ul>
-            <li><strong>Highly competitive market</strong> — How might we create content that provides a unique perspective to traveling?</li>
-            <li><strong>Capturing social media users</strong> — How might we integrate a website to successfully capture their social media following?</li>
-            <li><strong>Maintaining brand goals</strong> — How might we educate travelers about the unique value of Australia Tourism?</li>
-        </ul>
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">💡</span>
+                <div style="flex: 1;">
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">High Level Goals</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Research and develop a content strategy for the Norther brand</li>
+                        <li>Find new opportunities through user research</li>
+                        <li>Design high-fidelity prototype for new website</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #5a3d3d 0%, #3d2828 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #ff9f43; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">⚠️</span>
+                <div style="flex: 1;">
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Concerns & Challenges</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0;"><strong style="color: #fff;">Highly competitive market.</strong> How might we create content that provides a unique perspective to traveling?</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0;"><strong style="color: #fff;">What are users interested in?</strong> How might we integrate a website to successfully capture the social media users?</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0;"><strong style="color: #fff;">Maintain the brand goals?</strong> How might we educate travelers about the unique value of Australia Tourism?</p>
+                </div>
+            </div>
+        </div>
         
         <h2>User Research</h2>
-        <p>We crafted a 15-question survey distributed directly to Norther's social media following. With an incentive provided by Norther, we received 65 meaningful responses. This gave us an amazing opportunity to talk directly to their audience and define demographics, explore content interests, and discover user behavior and goals.</p>
+        <p>As a team, we crafted a 15-question survey to distribute directly to Norther's social media following. Norther provided an incentive for filling out our survey and we received 65 meaningful responses. Due to the survey being shared a few days late, we had a limited time to accept results.</p>
+        <p>With the amazing opportunity to talk directly to their following, we wanted to define demographics, explore content interests and discover user behavior and goals.</p>
         
         <p><em>[Image placeholder: Norther's Audience Statistics]</em></p>
         
-        <p><strong>Key Demographics:</strong></p>
-        <ul>
-            <li><strong>51.6% Age 24-44</strong></li>
-            <li><strong>66.7% Research trips with social media</strong></li>
-            <li><strong>62.1% Do not plan travel with children</strong></li>
-            <li><strong>54.8% Research trips on Mobile</strong></li>
-        </ul>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0;">
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">51.6%</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Age 24-44</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">66.7%</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Research trips with social media</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">62.1%</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Do not plan travel with children</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">54.8%</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Research trips on Mobile</p>
+            </div>
+        </div>
         
-        <p><strong>Key quote from users:</strong></p>
-        <p><em>"A clear summary of what's open and closed and the best weather"</em></p>
+        <div style="background: linear-gradient(135deg, #4a3f5c 0%, #2d2538 100%); padding: 20px; border-radius: 12px; border-left: 4px solid #8A2BE2; margin: 24px 0;">
+            <p style="color: rgba(255,255,255,0.8); font-size: 13px; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px;">Key quote from users</p>
+            <p style="color: #fff; font-style: italic; margin: 0; font-size: 16px; line-height: 1.6;">"A clear summary of what's open and closed and the best weather"</p>
+        </div>
         
         <h2>Synthesizing User Responses</h2>
-        <p>The most time-consuming aspect of the project. Using Miro, we added our survey response information and refined it through affinity mapping. This process was essential in helping Sonya develop a meaningful persona and helped us focus our content strategy.</p>
+        <p>Our most time-consuming aspect of the project. Using Miro, we added our survey response information and refined our information through affinity mapping.</p>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">👉</span>
+                <div>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">This process was essential in helping Sonya develop a meaningful persona. Our findings here also helped us focus our content strategy at a later stage.</p>
+                </div>
+            </div>
+        </div>
         
         <p><em>[Image placeholder: Affinity Mapping Process]</em></p>
         
         <h2>Competitive Analysis</h2>
-        <p>The tourism market in Northern Australia has high competition with well-known websites that mostly focus on travel articles and destination overviews. However, when comparing tourism websites from across the world, I found possibilities for differentiation and new strategies for connecting social media and websites.</p>
+        <p>Exploring the competition, I found tourism market in Northern Australia has high competition with well-known websites. These websites mostly focused on travel articles and destination overviews. But when comparing tourism websites from across the world, I found possibilities for differentiation and new strategies for connecting social media and websites.</p>
         
         <p><em>[Image placeholder: Competitive Analysis Grid]</em></p>
         
-        <h2>Pivoting at the Halfway Point</h2>
-        <p>Nearing our halfway point in the 2.5 week deadline, we stepped back and re-evaluated our position. We agreed to revise our initial goals and develop more realistic expectations for what we could deliver, focusing on an MVP approach rather than a full high-fidelity prototype.</p>
+        <h2>Team Check-up</h2>
+        <p>At this point of the project we were nearing our half-way point in the 2.5 weeks deadline. We stepped back and re-evaluated our position. We agreed that we would need to revise our initial goals and develop more realistic expectations for what we can deliver.</p>
         
-        <p><strong>Problem Statement:</strong> Young travelers need better insight into planning their adventures so that they can prepare accordingly and have an experience that matches their expectations.</p>
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">💡</span>
+                <div style="flex: 1;">
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Revised High Level Goals</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Research and develop a content strategy for the Norther brand</li>
+                        <li>Find new opportunities through user-research</li>
+                        <li style="text-decoration: line-through; opacity: 0.5;">Design high-fidelity prototype for new website</li>
+                        <li>Provide design rollout recommendations based on MVP (minimum viable product)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
-        <p><strong>Our Solution:</strong> Provide focused park information, insider insights, and resources to help educate and plan fulfilling destination visits, while helping them adapt to unexpected circumstances during their visit.</p>
+        <p>We also developed our Problem and Solution statements at this point.</p>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">👉</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 8px 0;">Problem Statement</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">Young travelers need better insight into planning their adventures so that they can prepare accordingly and have an experience that matches their expectations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">👉</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 8px 0;">Our Solution</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">Provide focused park information, insider insights, and resources to help educate and plan fulfilling destination visits, while helping them adapt to unexpected circumstances during their visit.</p>
+                </div>
+            </div>
+        </div>
         
         <h2>Information Architecture</h2>
-        <p>Dany provided us with a content strategy draft to validate through our research. As Norther didn't currently offer this content, it was challenging to fully grasp what was provided. We overcame this by developing a successful information architecture through affinity mapping as a team.</p>
+        <p>Dany provided us with a brief content strategy draft that she asked us to validate through our research. As Norther does not currently offer content it was difficult to fully grasp what we were provided. Overcoming this challenge, we worked as a team to develop a successful information architecture through the process of affinity mapping.</p>
         
         <p><em>[Image placeholder: Before - Original IA]</em></p>
         <p><em>[Image placeholder: After - Refined IA]</em></p>
         
         <h2>Content Rollout MVP</h2>
-        <p>This phased approach was designed to create the most impactful content, soonest, and get the new Norther site up and running. This allows for structured expansion of offerings as team bandwidth allows.</p>
+        <p>This phased approach is designed to create the most impactful content, soonest, and get the new Norther site up and running. This allows for a structured expansion of offerings as the team bandwidth allows for it.</p>
         
-        <p><strong>The MVP is Based on the User:</strong> User needs → Brand Voice → Beyond</p>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 12px; margin: 24px 0; text-align: center;">
+            <p style="color: #fff; font-weight: 600; margin: 0; font-size: 18px;">The MVP is Based on the User</p>
+            <p style="color: rgba(255,255,255,0.9); margin: 8px 0 0 0; font-size: 16px;">User needs → Brand Voice → Beyond</p>
+        </div>
         
         <p><em>[Image placeholder: MVP Phased Approach Diagram]</em></p>
         <p><em>[Image placeholder: Content Strategy Recommendations]</em></p>
@@ -136,7 +224,7 @@ const CASE_STUDIES = [
     `
 },
     {
-        id: 'bmx-archive',
+        id: 'skate-archive',
         icon: '🚴',
         title: 'BMX Archive',
         description: 'Digital archive and community platform preserving 40+ years of BMX culture and enabling vintage restorations.',
