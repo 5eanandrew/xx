@@ -149,7 +149,11 @@ function getMetaSummary(meta) {
 function openCase(caseId) {
     const study = CASE_STUDIES.find(s => s.id === caseId);
     if (!study) return;
-    
+
+    // Close any open modals first
+    closeAbout();
+    closeContact();
+
     // Build meta HTML
     const metaHTML = `
         <div class="case-detail-meta">
@@ -159,7 +163,7 @@ function openCase(caseId) {
             ${study.meta.timeline ? `<strong>Timeline:</strong> ${study.meta.timeline}` : ''}
         </div>
     `;
-    
+
     // Set modal content
     document.getElementById('case-hero').innerHTML = study.icon;
     document.getElementById('case-hero').style.background = GRADIENTS[study.gradient];
@@ -168,7 +172,7 @@ function openCase(caseId) {
         ${metaHTML}
         ${study.content}
     `;
-    
+
     // Show modal
     document.getElementById('case-detail').classList.add('active');
 }
@@ -186,6 +190,9 @@ function showHome() {
 }
 
 function showAbout() {
+    // Close any open modals first
+    closeCase();
+    closeContact();
     document.getElementById('about-modal').classList.add('active');
 }
 
@@ -194,6 +201,9 @@ function closeAbout() {
 }
 
 function showContact() {
+    // Close any open modals first
+    closeCase();
+    closeAbout();
     document.getElementById('contact-modal').classList.add('active');
 }
 
