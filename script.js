@@ -173,12 +173,14 @@ function openCase(caseId) {
         ${study.content}
     `;
 
-    // Show modal
+    // Show modal and prevent body scroll
     document.getElementById('case-detail').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeCase() {
     document.getElementById('case-detail').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // ===================================
@@ -194,10 +196,12 @@ function showAbout() {
     closeCase();
     closeContact();
     document.getElementById('about-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeAbout() {
     document.getElementById('about-modal').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 function showContact() {
@@ -205,10 +209,12 @@ function showContact() {
     closeCase();
     closeAbout();
     document.getElementById('contact-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeContact() {
     document.getElementById('contact-modal').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // ===================================
