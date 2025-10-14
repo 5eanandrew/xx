@@ -486,41 +486,222 @@ const CASE_STUDIES = [
     `
 },
 
-    {
-        id: 'skate-archive',
-        icon: '🚴',
-        title: 'BMX Archive',
-        description: 'Digital archive and community platform preserving 40+ years of BMX culture and enabling vintage restorations.',
-        gradient: 'gradient3',
-        meta: {
-            client: 'Small Wheels BMX Collective',
-            role: 'UX Designer & Information Architect',
-            timeline: '12 weeks'
-        },
-        content: `
-            <h2>Challenge</h2>
-            <p>Building a comprehensive digital archive and community platform for vintage BMX enthusiasts spanning 40+ years of history.</p>
-            
-            <h2>Content Scope</h2>
-            <ul>
-                <li><strong>2,000+ photographs</strong> (1970s-2020s)</li>
-                <li><strong>500+ race results</strong> and programs</li>
-                <li><strong>150+ bike specifications</strong> and builds</li>
-                <li><strong>Oral histories</strong> from 25+ community members</li>
+    // Add this to your CASE_STUDIES array in caseStudies.js
+
+{
+    id: 'inline-skate-archive',
+    icon: '🛼',
+    title: 'Aggressive Inline Archive',
+    description: 'Building a Netflix for niche skate videos—preserving 20+ years of inline skating culture through community-driven digital archiving.',
+    gradient: 'gradient3',
+    meta: {
+        client: 'Personal Project',
+        role: 'UX Design, Development & Video Archiving',
+        timeline: '2014 - Present (10 years)'
+    },
+    content: `
+        <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 24px; border-radius: 12px; margin: 0 0 32px 0; text-align: center;">
+            <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 18px; line-height: 1.6; font-weight: 500;">A decade-long journey preserving aggressive inline skating history</p>
+        </div>
+        
+        <h2>The Vision</h2>
+        <p>Create a comprehensive digital archive for aggressive inline skating videos—a Netflix for a niche community. Connect classic VHS-era content with modern filmers, preserving decades of skating culture while making it accessible and discoverable.</p>
+        
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">💡</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 8px 0;">The Core Problem</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0; line-height: 1.6;">Decades of aggressive inline skating videos were scattered across degrading VHS tapes, lost YouTube channels, and personal collections. No central archive existed, and without modern tools, building a comprehensive database was unsustainable for one person.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Version 1.0: The Manual Era (2014)</h2>
+        <p>Ten years ago, I built the first version using basic HTML/CSS/Bootstrap. The process was entirely manual but driven by passion for preservation.</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">The Workflow</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li><strong>Digitization:</strong> Converting VHS tapes to digital formats</li>
+                <li><strong>Restoration:</strong> Using AVI Synth and filters to repair old footage</li>
+                <li><strong>Uploading:</strong> YouTube hosting for best resolution and accessibility</li>
+                <li><strong>Metadata:</strong> Manually researching and cataloging video information</li>
+                <li><strong>Networking:</strong> Connecting with skaters about their content and permissions</li>
             </ul>
-            
-            <h2>Design Solution</h2>
-            <p>Created a visual timeline navigation with AI-assisted tagging and community crowdsourcing to identify people, bikes, and locations. Implemented story layering for community memories.</p>
-            
-            <h2>Impact</h2>
-            <ul>
-                <li><strong>450+ registered</strong> community members</li>
-                <li><strong>85% of archive</strong> digitized and tagged</li>
-                <li><strong>12 vintage bike restorations</strong> completed using archive specs</li>
-                <li><strong>Featured in BMX Plus! Magazine</strong></li>
+        </div>
+        
+        <p><em>[Image placeholder: Screenshot of original HTML/Bootstrap site]</em></p>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">📊</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Version 1.0 Results</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li><strong>150+ videos</strong> digitized and archived</li>
+                        <li><strong>100+ skaters</strong> catalogued with profiles</li>
+                        <li><strong>Consistent positive feedback</strong> from the community</li>
+                        <li><strong>YouTube channel</strong> became a reference for the community</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>The Limitations</h2>
+        <p>Despite success, the manual approach hit scalability walls that made the original vision impossible to fully realize.</p>
+        
+        <div style="background: linear-gradient(135deg, #5a3d3d 0%, #3d2828 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #ff9f43; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">⚠️</span>
+                <div style="flex: 1;">
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0;">Unsustainable Challenges</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li><strong>Manual data entry</strong> — Every video required hand-coded HTML updates</li>
+                        <li><strong>No search or filtering</strong> — Users couldn't explore by skater, year, or style</li>
+                        <li><strong>Static structure</strong> — Hard to maintain and update as archive grew</li>
+                        <li><strong>Upload bottleneck</strong> — Everything depended on me digitizing and uploading</li>
+                        <li><strong>Limited metadata</strong> — Couldn't tag tricks, spots, or other useful details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>The Pivot: AI-Enabled Rebuild</h2>
+        <p>With the emergence of AI coding tools, I could finally build the database-driven platform I originally envisioned. The goal shifted from doing everything myself to creating infrastructure that empowers the community.</p>
+        
+        <div style="background: linear-gradient(135deg, #4a4a3d 0%, #38382d 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #f4d03f; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🎯</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Revised Goals for Version 2.0</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li>Build a proper content management system with search and filtering</li>
+                        <li>Connect filmers directly with their content (artist with art)</li>
+                        <li>Support community contributions rather than solo uploading</li>
+                        <li>Create sustainable infrastructure that scales beyond one person</li>
+                        <li>Preserve credit and context for each video and creator</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Technical Approach</h2>
+        <p>I designed the entire site from my vision and used AI (Claude Code and GPT) to build it out, handle data migration, and solve technical challenges.</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">Tech Stack</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li><strong>Next.js</strong> — Modern React framework for performance and SEO</li>
+                <li><strong>Sanity CMS</strong> — Structured content database for videos, skaters, and metadata</li>
+                <li><strong>AI-assisted development</strong> — Claude Code and GPT for building and migration</li>
+                <li><strong>YouTube integration</strong> — Embedding videos while giving filmers control</li>
             </ul>
-        `
-    }
+        </div>
+        
+        <p><em>[Image placeholder: New Next.js site architecture diagram]</em></p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="color: #8A2BE2; font-weight: 600; margin: 0 0 12px 0; font-size: 16px;">Key Features</p>
+            <ul style="margin: 0; padding-left: 20px; color: #444; line-height: 1.8;">
+                <li><strong>Dynamic search and filtering</strong> — Browse by skater, year, video type, or crew</li>
+                <li><strong>Skater profiles</strong> — Dedicated pages connecting all content from each skater</li>
+                <li><strong>Rich metadata</strong> — Tags, locations, filming dates, and cultural context</li>
+                <li><strong>Filmer credits</strong> — Proper attribution connecting artists to their work</li>
+                <li><strong>Community contributions</strong> — Infrastructure for filmers to submit their content</li>
+            </ul>
+        </div>
+        
+        <p><em>[Image placeholder: Screenshot of new video detail page]</em></p>
+        <p><em>[Image placeholder: Screenshot of skater profile page]</em></p>
+        
+        <h2>Video Restoration Process</h2>
+        <p>The technical challenge of preserving decades-old footage while maintaining quality.</p>
+        
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🎬</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Digitization Pipeline</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 12px 0; line-height: 1.6;"><strong>Current Status:</strong> Most videos ready for upload, with 20 raw footage pieces requiring restoration work.</p>
+                    <p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; line-height: 1.6;"><strong>Research Focus:</strong> Exploring new filter strategies and restoration techniques for remaining raw footage.</p>
+                    <p style="color: rgba(255,255,255,0.8); margin: 0; line-height: 1.6; font-size: 14px;">Previous work included AVI Synth filters for VHS noise reduction, color correction, and stabilization.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Community Philosophy</h2>
+        <p>This project has always been about preservation and access, not ownership or monetization.</p>
+        
+        <div style="background: linear-gradient(135deg, #4a3f5c 0%, #2d2538 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #8A2BE2; margin: 24px 0;">
+            <p style="color: #fff; font-style: italic; margin: 0; font-size: 16px; line-height: 1.6;">"It's just a library for the community. The response has always been positive."</p>
+        </div>
+        
+        <ul>
+            <li><strong>No permissions barriers</strong> — Focus on preservation and celebration</li>
+            <li><strong>Proper attribution</strong> — Every video credits the filmer and skaters</li>
+            <li><strong>Community ownership</strong> — Shifting from solo curation to collaborative archive</li>
+            <li><strong>Cultural preservation</strong> — Documenting an underground sport's evolution</li>
+        </ul>
+        
+        <h2>Launch Plan</h2>
+        <div style="background: linear-gradient(135deg, #3d4a5a 0%, #2d3840 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #40E0D0; margin: 24px 0;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <span style="font-size: 24px;">🚀</span>
+                <div>
+                    <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 17px;">Initial Release</p>
+                    <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 20px; line-height: 1.8;">
+                        <li><strong>20+ videos</strong> at launch to demonstrate platform</li>
+                        <li><strong>Core functionality</strong> — Search, browse, and discovery features</li>
+                        <li><strong>Filmer profiles</strong> — Connecting creators with their work</li>
+                        <li><strong>Migration path</strong> — Strategy for bringing over 150+ archive videos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Impact & Growth Over 10 Years</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0;">
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">150+</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Videos Preserved</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">100+</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Skaters Documented</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">10</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Years of Commitment</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 20px; border-radius: 12px; text-align: center;">
+                <p style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 8px 0;">2</p>
+                <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 14px;">Complete Rebuilds</p>
+            </div>
+        </div>
+        
+        <h2>Why This Matters</h2>
+        <p>This isn't just about building a website—it's about preserving a subculture's history and making it accessible for future generations. Aggressive inline skating has a rich visual history that exists primarily in personal collections and degrading physical media. Without intentional preservation, it disappears.</p>
+        
+        <p><strong>The evolution from V1 to V2 represents more than technical growth</strong>—it's about recognizing when to wait for the right tools, adapting your approach, and building sustainable infrastructure that outlasts individual effort.</p>
+        
+        <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 28px; border-radius: 12px; margin: 32px 0; text-align: center;">
+            <p style="color: #fff; font-weight: 600; margin: 0 0 12px 0; font-size: 20px;">Project Philosophy</p>
+            <p style="color: rgba(255,255,255,0.95); margin: 0; font-size: 17px; line-height: 1.6;">Preserve the culture. Credit the artists.<br>Build for the community, not for yourself.<br>Sometimes the best strategy is patience and iteration.</p>
+        </div>
+        
+        <h2>What I Learned</h2>
+        <ul>
+            <li><strong>Long-term vision requires adaptation</strong> — The right solution 10 years ago isn't the right solution today</li>
+            <li><strong>Community trust is earned through consistency</strong> — A decade of positive feedback comes from genuine care</li>
+            <li><strong>Technical constraints are temporary</strong> — Waiting for better tools enabled the original vision</li>
+            <li><strong>Sustainability over heroics</strong> — Building infrastructure for community contribution beats solo effort</li>
+            <li><strong>Design + AI collaboration</strong> — Having clear vision while using AI for execution produces better results than either alone</li>
+            <li><strong>Cultural preservation is design work</strong> — Information architecture and UX are crucial for making history accessible</li>
+        </ul>
+    `
+},
 ];
 
 // Gradient color schemes for case study cards
