@@ -704,6 +704,7 @@ const CASE_STUDIES = [
 },
 // Add this to your CASE_STUDIES array in caseStudies.js
 
+
 {
     id: 'inline-skate-archive',
     icon: '🛼',
